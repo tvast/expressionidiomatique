@@ -1,0 +1,11 @@
+	<div id="box" class="container center">
+		
+		<h1 id="title">{{expressionShowed}}</h1>
+
+		<div class="row">
+			<div *ngFor="let hero of reponseArray">
+				<a class="col s4 waves-effect waves-light waves-effect waves-light btn">{{hero.reponse}}</a>
+			</div>
+		</div>
+		<a (click)="reload()" class="waves-effect waves-light waves-effect waves-light btn">reload</a>
+	</div>
